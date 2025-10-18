@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Contact Form & To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Interactive Web Page</h1>
+    </header>
+
+    <main class="container">
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+        
+        <section class="todo-list">
+            <h2>To-Do List</h2>
+            <div class="task-input-container">
+                <input type="text" id="taskInput" placeholder="Enter a task">
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+            <div class="task-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <ul id="taskList"></ul>
+            <div class="task-stats">
+                <span id="taskCount">0 tasks</span>
+                <button id="clearCompletedBtn">Clear Completed</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Interactive Web Page</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

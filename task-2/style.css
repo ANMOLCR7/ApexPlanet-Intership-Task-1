@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h2 {
+    color: #2563eb;
+    margin-bottom: 1rem;
+}
+
+/* Container Flexbox */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sections */
+.contact-form, .todo-list {
+    background: #fff;
+    padding: 25px;
+    flex: 1 1 400px;
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-width: 300px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1e4bb8;
+}
+
+button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* Error and Success Messages */
+.error-message {
+    color: #dc2626;
+    font-size: 0.875rem;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+#formMessage {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.success {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+/* To-Do List Styles */
+.task-input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.task-input-container input {
+    flex: 1;
+}
+
+.task-input-container button {
+    width: auto;
+    flex-shrink: 0;
+}
+
+.task-filters {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 1rem;
+}
+
+.filter-btn {
+    flex: 1;
+    padding: 8px;
+    background-color: #f3f4f6;
+    color: #4b5563;
+    border: 1px solid #d1d5db;
+}
+
+.filter-btn.active {
+    background-color: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 12px;
+    background: #e3f2fd;
+    margin-bottom: 10px;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+li.completed {
+    background-color: #d1fae5;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.task-content {
+    flex: 1;
+    cursor: pointer;
+}
+
+.task-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.task-actions button {
+    width: auto;
+    padding: 5px 10px;
+    font-size: 0.875rem;
+}
+
+.edit-btn {
+    background-color: #f59e0b;
+}
+
+.edit-btn:hover {
+    background-color: #d97706;
+}
+
+.remove-btn {
+    background-color: #dc2626;
+}
+
+.remove-btn:hover {
+    background-color: #b91c1c;
+}
+
+.task-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+#clearCompletedBtn {
+    width: auto;
+    background-color: #6b7280;
+}
+
+#clearCompletedBtn:hover {
+    background-color: #4b5563;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .task-input-container {
+        flex-direction: column;
+    }
+    
+    .task-stats {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
