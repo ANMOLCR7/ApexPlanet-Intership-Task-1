@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Styling and JavaScript</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Advanced Styling and JavaScript</h1>
+      <p>Explore responsive design, interactive quizzes, and API integration</p>
+    </header>
+
+    <div class="boxes-container">
+
+      <section id="quiz-section" class="box">
+        <h2>1. Interactive JavaScript Quiz</h2>
+        <div id="quiz-box">
+          <h3 id="question">Question will appear here</h3>
+          <div id="answers"></div>
+          <div id="quiz-controls">
+            <span id="progress">Question 1 of 3</span>
+            <div>
+              <button id="nextBtn" class="btn">Next Question</button>
+              <button id="resetBtn" class="btn">Reset Quiz</button>
+            </div>
+          </div>
+          <p id="result"></p>
+        </div>
+      </section>
+
+      <section id="api-section" class="box">
+        <h2>2. Fetch Data from API</h2>
+        <p>Click the button below to fetch a random programming joke!</p>
+        <button id="getJoke" class="btn">Get a Programming Joke</button>
+        <p id="joke" class="loading">Joke will appear here...</p>
+      </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
