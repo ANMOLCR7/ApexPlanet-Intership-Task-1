@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing</title>
+  <meta name="description" content="Browse and filter products by category and price with an interactive shopping experience.">
+  <link rel="icon" href="../portfolio/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🛒 Product Listing</h1>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search products...">
+    <select id="filter">
+      <option value="all">All Categories</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+      <option value="books">Books</option>
+      <option value="home">Home & Garden</option>
+    </select>
+
+    <select id="sort">
+      <option value="default">Sort By</option>
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+      <option value="rating">Rating</option>
+      <option value="name">Name</option>
+    </select>
+
+    <button id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+  </div>
+
+  <div class="pagination">
+    <button id="prev-page">Previous</button>
+    <span id="page-info">Page 1</span>
+    <button id="next-page">Next</button>
+  </div>
+
+  <div class="products" id="product-list"></div>
+
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <p>Total: ₹<span id="cart-total">0</span></p>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

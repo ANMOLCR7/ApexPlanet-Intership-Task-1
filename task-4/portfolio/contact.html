@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Anmol Chauhan</title>
+  <meta name="description" content="Contact Anmol Chauhan for web development projects and collaborations.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h2 class="logo">Anmol Chauhan</h2>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button id="dark-mode-toggle" title="Toggle Dark Mode">🌙</button>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    <p>Have a question or want to work together? Drop me a message below!</p>
+
+    <div class="contact-info">
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <p>anmolrchauhan@gmail.com</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <p>+91 7304679579</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>India, Mumbai</p>
+      </div>
+    </div>
+
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+      </div>
+
+      <label for="honeypot" class="sr-only">Leave this field empty</label>
+      <input type="text" id="honeypot" name="honeypot" class="sr-only">
+      <button type="submit" class="btn">Send Message</button>
+      <p id="status"></p>
+    </form>
+
+    <div class="social-links">
+      <a href="https://github.com/anmolchauhan" target="_blank" rel="noopener noreferrer" title="Visit GitHub Profile"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/anmolchauhan" target="_blank" rel="noopener noreferrer" title="Visit LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:anmol@example.com" title="Send Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <h2>Find Me</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.974!2d72.8258!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1623456789012!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" title="Location Map" class="map-iframe"></iframe>
+  </section>
+
+  <footer>
+    <p>© 2025 Anmol Chauhan | Built with ❤️ using HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

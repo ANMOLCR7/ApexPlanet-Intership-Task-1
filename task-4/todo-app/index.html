@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <meta name="description" content="A feature-rich to-do list app with categories, due dates, and local storage.">
+  <link rel="icon" href="../portfolio/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 To-Do List</h1>
+    <div class="input-section">
+      <label for="task-input" class="sr-only">Task input</label>
+      <input type="text" id="task-input" placeholder="Enter a new task...">
+      <label for="category-select" class="sr-only">Category</label>
+      <select id="category-select">
+        <option value="personal">Personal</option>
+        <option value="work">Work</option>
+        <option value="shopping">Shopping</option>
+      </select>
+      <label for="due-date" class="sr-only">Due date</label>
+      <input type="date" id="due-date">
+      <button id="add-btn" title="Add new task">Add</button>
+    </div>
+    <div class="filters">
+      <label for="search-input" class="sr-only">Search tasks</label>
+      <input type="text" id="search-input" placeholder="Search tasks...">
+      <label for="filter-category" class="sr-only">Filter by category</label>
+      <select id="filter-category">
+        <option value="all">All Categories</option>
+        <option value="personal">Personal</option>
+        <option value="work">Work</option>
+        <option value="shopping">Shopping</option>
+      </select>
+      <button id="export-btn" title="Export tasks to JSON file">Export</button>
+      <input type="file" id="import-file" accept=".json" class="hidden" title="Select JSON file to import tasks" aria-label="Import tasks from JSON file">
+      <button id="import-btn" title="Import tasks from JSON file">Import</button>
+    </div>
+    <div class="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+    <ul id="task-list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
