@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anmol Chauhan | Portfolio</title>
+  <meta name="description" content="Portfolio of Anmol Chauhan, a frontend developer specializing in HTML, CSS, and JavaScript. View projects, skills, and contact information." />
+  <meta name="keywords" content="frontend developer, web developer, HTML, CSS, JavaScript, portfolio, responsive design" />
+  <meta name="author" content="Anmol Chauhan" />
+  
+  <!-- Performance Optimizations -->
+  <link rel="preload" href="style.min.css" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="favicon.ico" />
+  
+  <!-- Critical CSS for above-the-fold content -->
+  <style>
+    header, #hero { 
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+    .loading {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Main Navigation">
+      <div class="nav-left">
+        <h1>Anmol Chauhan</h1>
+      </div>
+      <ul class="nav-center">
+        <li><a href="#about" aria-label="About section">About</a></li>
+        <li><a href="#skills" aria-label="Skills section">Skills</a></li>
+        <li><a href="#projects" aria-label="Projects section">Projects</a></li>
+        <li><a href="#testimonials" aria-label="Testimonials section">Testimonials</a></li>
+        <li><a href="#contact" aria-label="Contact section">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="nav-social">
+          <a href="https://github.com/ANMOLCR7" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github fa-xl"></i>
+          </a>
+          <a href="https://linkedin.com/in/anmol-chauhan-baa117279" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin fa-xl"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="hero" tabindex="0">
+      <div class="hero-content">
+        <h2 class="typing-text">Hi, I'm Anmol <span aria-label="waving hand">👋</span></h2>
+        <p class="hero-subtitle">Frontend Developer | HTML | CSS | JavaScript</p>
+        <p class="hero-description">Crafting beautiful, responsive, and accessible web experiences</p>
+        <div class="hero-buttons">
+          <a href="Anmol_Resume.pdf" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            <i class="fas fa-code"></i> View Projects
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-elements">
+          <div class="floating-icon" style="--delay: 0s"><i class="fab fa-html5"></i></div>
+          <div class="floating-icon" style="--delay: 1s"><i class="fab fa-css3-alt"></i></div>
+          <div class="floating-icon" style="--delay: 2s"><i class="fab fa-js"></i></div>
+          <div class="floating-icon" style="--delay: 3s"><i class="fab fa-react"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>I'm a <strong>BSc Computer Science graduate</strong> and freelance web developer passionate about building clean, responsive websites. I love learning new technologies and collaborating on creative projects.</p>
+            <p>With a strong foundation in frontend development, I specialize in creating user-friendly interfaces that combine aesthetics with functionality. My approach focuses on writing clean, maintainable code and ensuring accessibility for all users.</p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Months Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Client Satisfaction</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="profile-card">
+              <div class="profile-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <h3>Anmol Chauhan</h3>
+              <p>Frontend Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Frontend</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+                <div class="skill-level" data-level="95"></div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+                <div class="skill-level" data-level="90"></div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+                <div class="skill-level" data-level="85"></div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+                <div class="skill-level" data-level="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+                <div class="skill-level" data-level="80"></div>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+                <div class="skill-level" data-level="85"></div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Responsive Design</span>
+                <div class="skill-level" data-level="90"></div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-universal-access"></i>
+                <span>Accessibility</span>
+                <div class="skill-level" data-level="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="ui">UI/UX</button>
+          <button class="filter-btn" data-filter="responsive">Responsive</button>
+          <button class="filter-btn" data-filter="react">React</button>
+          <button class="filter-btn" data-filter="service">Service Platform</button>
+        </div>
+        <div class="project-list">
+          <article class="project-card" data-category="web responsive service">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/ANMOLCR7/Servify.git" target="_blank" rel="noopener" aria-label="View Servify code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" aria-label="Live demo coming soon">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-placeholder">
+                <i class="fas fa-concierge-bell"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Servify - Service Platform</h3>
+              <p>A comprehensive service platform connecting users with service providers. Features separate interfaces for customers and service providers with booking, scheduling, and payment integration.</p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive</span>
+                <span class="tech-tag">Service Platform</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="project-card" data-category="web responsive react ui">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/ANMOLCR7/influtics-ui.git" target="_blank" rel="noopener" aria-label="View Influtics UI code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://influtics-ui.vercel.app/" target="_blank" rel="noopener" aria-label="View Influtics UI live demo">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-placeholder">
+                <i class="fas fa-chart-line"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Influtics UI - React Conversion</h3>
+              <p>Converted a complete HTML/CSS/JavaScript UI to a modern React application. Features responsive design, component-based architecture, and enhanced user interactions.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">Responsive</span>
+                <span class="tech-tag">Vercel</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="project-card" data-category="web responsive">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/ANMOLCR7/Financial-And-Book-Aid/blob/main/FABA-Student/Dashboard.html" target="_blank" rel="noopener" aria-label="View Student Portal code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" aria-label="Live demo coming soon">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-placeholder">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Student Portal UI</h3>
+              <p>A comprehensive frontend-only student dashboard with modern UI/UX design using HTML/CSS/JS.</p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Clients Say</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"Anmol delivered an exceptional website that exceeded our expectations. His attention to detail and responsive design skills are outstanding."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4>Sarah Johnson</h4>
+                <p>Marketing Director, TechCorp</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"Working with Anmol was a pleasure. He understood our vision perfectly and created a beautiful, functional website that our users love."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4>Mike Chen</h4>
+                <p>Founder, MicroTech</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's work together!</h3>
+            <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!</p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>anmolrchauhan@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>Mumbai, India</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h4>Availability</h4>
+                  <p>Available for new projects</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form action="https://formspree.io/f/xovwlzdv" method="POST" aria-label="Contact form" autocomplete="on" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input id="name" name="name" type="text" placeholder="Your Name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input id="email" name="email" type="email" placeholder="Your Email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" placeholder="Project inquiry, collaboration, etc." required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+
+            <input type="text" name="_gotcha" style="display: none;" />
+
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Anmol Chauhan</h3>
+          <p>Frontend Developer passionate about creating beautiful web experiences.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="footer-social">
+            <a href="https://github.com/ANMOLCR7" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/anmol-chauhan-baa117279" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="current-year">2025</span> Anmol Chauhan. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Performance monitoring -->
+  <script>
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Performance monitoring
+    window.addEventListener('load', function() {
+      const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+      console.log(`Portfolio loaded in: ${loadTime}ms`);
+    });
+  </script>
+
+  <script src="script.min.js"></script>
+</body>
+</html>
